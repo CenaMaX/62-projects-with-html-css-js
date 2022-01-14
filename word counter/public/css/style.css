@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Amaranth', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to top, rgb(33, 135, 153), rgb(36, 161, 93));
+}
+
+.counter-container {
+  font-size: 31px;
+  padding: 20px;
+}
+
+.word {
+  resize: none;
+  font-size: 25px;
+  padding: 10px;
+  caret-color: green;
+}

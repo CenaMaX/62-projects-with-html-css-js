@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  min-height: 100vh;
+  background: linear-gradient(to top, rgb(43, 97, 214), rgb(34, 172, 160));
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px;
+  width: 620px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.box:hover {
+  background: rgba(255, 255, 255, 0.062);
+}
+
+.img {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 15px;
+}
+
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.copyright {
+  font-size: 15px;
+}
+
+.copyright::first-letter {
+  color: rgb(44, 44, 138);
+  font-size: 22px;
+}
+
+.date {
+  font-size: 15px;
+}
+
+.date::first-letter {
+  color: rgb(44, 44, 138);
+  font-size: 22px;
+}
+
+.explanation {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 23px;
+  padding: 10px;
+  color: rgb(34, 20, 59);
+}

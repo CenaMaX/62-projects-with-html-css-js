@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>User Settings</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="aside">
+        <li class="item active" data-show="Profile">Profile</li>
+        <li class="item" data-show="Notification">Notification</li>
+      </ul>
+      <div class="box-container">
+        <div class="box Profile">
+          <h2 class="title">User Profile</h2>
+          <label for="username">username</label>
+          <input type="text" name="username" />
+          <label for="email">email</label>
+          <input type="email" name="email" />
+          <label for="password">password</label>
+          <input type="password" name="password" />
+          <input type="submit" value="confirm" />
+        </div>
+        <div class="box Notification">
+          <h2 class="title">User Notification</h2>
+          <div class="noti">
+            <h5 class="noti-title">Message</h5>
+            <p class="noti-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="noti">
+            <h5 class="noti-title">Message</h5>
+            <p class="noti-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="noti">
+            <h5 class="noti-title">Message</h5>
+            <p class="noti-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>

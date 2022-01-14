@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(53, 153, 160),
+    rgba(99, 56, 139, 0.4)
+  );
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 450px;
+}
+
+.square {
+  width: 15px;
+  height: 14px;
+  background: #000;
+  margin: 2px;
+  box-shadow: 1px 1px 2px black;
+  transition: 2s ease-in;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}

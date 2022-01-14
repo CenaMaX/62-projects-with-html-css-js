@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    to top,
+    rgb(231, 127, 179),
+    rgba(34, 240, 212, 0.267)
+  );
+}
+
+.box {
+  width: 600px;
+  height: 270px;
+  background: #e0e0e0;
+  box-shadow: 11px 28px 80px #5a5a5a, -11px -28px 80px #ffffff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box .chucknorris {
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  text-align: center;
+  padding: 10px;
+}
+
+.box .share a {
+  cursor: pointer;
+}
+
+.box .share a i {
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.box .share a .fab {
+  color: #00acee;
+}
+
+.box .share a .far {
+  color: #f53b57;
+}

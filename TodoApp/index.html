@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center text-warning my-5">Todo App</h1>
+      <div
+        class="col-12 bg-warning my-1 text-justify p-3 border border-danger rounded-top rounded-left rounded-right rounded-bottom"
+      >
+        <h5 class="text-danger"><span>1.</span> Enter Your Routines</h5>
+        <h5 class="text-danger">
+          <span>2.</span> Add Your Routines with Click or Enter
+        </h5>
+        <h5 class="text-danger"><span>3.</span> Delete Your Rotines With X</h5>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5">
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="Routines ......"
+              class="form-control"
+              id="inp-todo"
+            />
+            <button id="btn-todo" class="btn btn-success">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="list-group mt-5 list-unstyled p-3"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

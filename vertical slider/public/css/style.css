@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-slide {
+  position: absolute;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.left-slide div:nth-child(1) {
+  background: #1e90ff;
+}
+
+.left-slide div:nth-child(2) {
+  background: #ff6348;
+}
+
+.left-slide div:nth-child(3) {
+  background: #7158e2;
+}
+
+.left-slide div:nth-child(4) {
+  background: #079992;
+}
+
+.left-slide > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-slide div h1 {
+  font-size: 48px;
+}
+
+.right-slide {
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  top: 0;
+  left: 35%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right-slide div:nth-child(1) {
+  background-image: url('../images/flower-4.jpg');
+}
+
+.right-slide div:nth-child(2) {
+  background-image: url('../images/flower-3.jpg');
+}
+
+.right-slide div:nth-child(3) {
+  background-image: url('../images/flower-2.jpg');
+}
+
+.right-slide div:nth-child(4) {
+  background-image: url('../images/flower-1.jpg');
+}
+
+.btn-container button {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  z-index: 1000;
+  padding: 18px;
+  font-size: 16px;
+  border-radius: 2px;
+  border: none;
+  color: gray;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn-container button:hover {
+  color: black;
+}
+
+.btn-container button:focus {
+  outline: none;
+}
+
+.btn-container .btn-up {
+  transform: translateY(-100%);
+}
+
+.btn-container .btn-down {
+  transform: translateX(-100%);
+}

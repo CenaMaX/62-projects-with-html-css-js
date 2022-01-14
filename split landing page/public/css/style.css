@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.split {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+.split.left {
+  background-image: url('../images/playstation5.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.split.right {
+  background-image: url('../images/xboxseriesx.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.split .content h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.hover-left .left {
+  transform: scale(1.2) skew(2deg);
+  transition: 0.5s;
+}
+
+.hover-right .right {
+    transform: scale(1.2) skew(-2deg);
+    transition: 0.5s;
+}
+

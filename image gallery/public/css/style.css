@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: cornflowerblue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.panel img {
+  height: 310px;
+  width: 120px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.panel.active img {
+  width: 450px;
+  transition: all 0.2s ease-in-out;
+}

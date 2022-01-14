@@ -1,0 +1,52 @@
+:root {
+    --color: #f7546c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background: #040e4b;
+}
+
+.heart {
+    width: 50px;
+    height: 50px;
+    background: var(--color);
+    position: absolute;
+    transform: rotate(-45deg);
+    box-shadow: 1px 1px 10px var(--color);
+}
+
+.heart::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -50%;
+    left: 0;
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px var(--color);
+}
+
+.heart::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 50%;
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px var(--color);
+}

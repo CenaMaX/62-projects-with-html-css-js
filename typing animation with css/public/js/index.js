@@ -1,0 +1,1 @@
+alert('Typing animation with css')

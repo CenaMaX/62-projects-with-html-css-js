@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+textarea {
+  border: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  background: #6441a5;
+}
+
+.add-btn {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  padding: 5px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border-radius: 4px;
+  cursor: pointer;
+  background: white;
+  transition: 0.2s;
+}
+
+.add-btn:hover {
+  background: #0abde3;
+}
+
+.note-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.note {
+  width: 23rem;
+  height: 20rem;
+  background: white;
+  border-radius: 4px;
+  margin: 50px;
+}
+
+.note-head {
+  background: #7d5fff;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn {
+  margin: 8px;
+  font-size: 18px;
+  color: #dfe4ea;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #a4b0be;
+}
+
+.note-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.textarea {
+  resize: none;
+  width: 22rem;
+  height: 15rem;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.note-text {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1030px) {
+  .note-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

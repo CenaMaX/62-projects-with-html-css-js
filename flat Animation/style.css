@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.flat {
+  padding: 30px 150px;
+  background: rgb(116, 34, 133);
+  border-radius: 5%;
+  transform-origin: top left;
+  transition: 0.1s;
+  animation: flatAnimation 2s ease-in-out;
+}
+
+.flat h2 {
+  color: white;
+  font-size: 30px;
+}
+
+@keyframes flatAnimation {
+  20%,
+  60% {
+    transform: rotate(70deg);
+  }
+  40%,
+  80% {
+    transform: rotate(55deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(600px);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to right, rgb(213, 87, 230), rgb(58, 199, 255));
+}
+
+li {
+  position: relative;
+  background: white;
+  padding: 15px;
+  border-radius: 3%;
+  color: rgb(70, 70, 70);
+  user-select: none;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+li button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  margin: 15px;
+  background: rgb(243, 16, 16);
+  top: 0;
+  right: 0;
+  color: white;
+}
+
+.active {
+  background: rgb(69, 158, 10);
+  color: white;
+}
+
+.delete {
+  display: none;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+}
+
+.left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right {
+  background: #130f40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  width: 350px;
+  text-align: justify;
+}
+
+.content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  top: 10%;
+}
+
+.content label {
+  display: block;
+  color: #00b894;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.content input {
+  text-align: center;
+  width: 16rem;
+  height: 25px;
+  font-size: 17px;
+  font-weight: 200;
+  color: white;
+  background: #130f40;
+  border-bottom: 1px solid #55efc4;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  transition: 0.6s;
+}
+
+.content input:focus:not(.submit) {
+  box-shadow: inset 1px 1px 10px #208570;
+  transition: 0.3s;
+}
+
+.content .submit {
+  padding: 10px 40px;
+  background: white;
+  color: #208570;
+  font-size: 17px;
+  margin-top: 10px;
+  transition: 0.6s;
+}
+
+.content .submit:hover {
+  background: #208570;
+  color: white;
+  transition: 0.3s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .content input, .content button {
+        width: 100%;
+    }
+}

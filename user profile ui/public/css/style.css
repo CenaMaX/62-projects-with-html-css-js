@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #474787;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  border-radius: 5px;
+}
+
+.card .setting-btn {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card .setting-btn:hover {
+  animation: rotate 1s forwards ease;
+  transition: 0.3s;
+}
+
+.card .avatar {
+  font-size: 55px;
+}
+
+.card .title {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.card .location {
+  font-size: 14px;
+  color: gray;
+}
+
+.card .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info li {
+  margin: 20px;
+}
+
+.info li i {
+  font-size: 25px;
+}
+
+.info li:nth-child(1) i {
+  color: #2d98da;
+}
+
+.info li:nth-child(2) i {
+  color: #fa4a53;
+}
+
+.info li:nth-child(3) i {
+  color: #3c6382;
+}
+
+.info li i:hover {
+  filter: invert(1);
+  transition: 0.3s;
+}
+
+.info li h5 {
+  color: #636e72;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.card .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .social-media .social-item {
+  margin: 16px 10px;
+}
+
+.card .social-media .social-item i {
+  font-size: 18px;
+  color: #2c2c54;
+}
+
+.card .social-media .social-item i:hover {
+  color: #575fcf;
+  transform: scale(1.4);
+}
+
+.card .btn {
+  padding: 15px 70px;
+  border-radius: 50px;
+  background: #02a8a6;
+  color: white;
+  margin-top: 20px;
+  transition: 0.5s;
+}
+
+.card .btn:hover {
+  background: #3c40c6;
+  transition: 0.5s;
+}
+
+.setting-box {
+  width: 300px;
+  height: 300px;
+  background: white;
+  margin-left: 10px;
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -2;
+  overflow: hidden;
+  transform: translate(350px);
+  border-radius: 5px;
+}
+
+.setting-box.active {
+  opacity: 1;
+  transition: 0.4s;
+  z-index: 1;
+  transform: translate(350px);
+}
+
+.setting-box .title {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    color: black;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: tomato;
+  }
+}

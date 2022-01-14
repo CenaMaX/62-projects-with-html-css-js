@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7757a8;
+  background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233f1c70' fill-opacity='0.38' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
+  min-height: 100vh;
+}
+
+.quote-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  width: 35rem;
+  height: 15rem;
+  text-align: center;
+}
+
+.long-quote {
+  width: 37rem;
+  height: 18rem;
+}
+
+.long-quote .quote-text #text {
+  font-size: 23px;
+}
+
+.quote-text {
+  padding: 20px;
+}
+
+.quote-text #text {
+  font-size: 27px;
+  font-weight: 600;
+  color: #222f3e;
+}
+
+.quote-author #author {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: black;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container button {
+  margin: 10px;
+  padding: 11px 13px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.buttons-container .twitter-btn {
+  background-color: #00acee;
+}
+
+.buttons-container .twitter-btn:hover {
+  background-color: #0880af;
+}
+
+.buttons-container .new-quote-btn {
+  background-color: #e1b12c;
+}
+
+.buttons-container .new-quote-btn:hover {
+  background-color: #a58120;
+}
+
+@media screen and (max-width: 700px) {
+  .quote-box {
+    width: 28rem;
+    height: 12rem;
+  }
+
+  .quote-text #text {
+    font-size: 22px;
+  }
+
+  .quote-author #author {
+    font-size: 16px;
+  }
+
+  .buttons-container button {
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .quote-box {
+    width: 22rem;
+    height: 10rem;
+  }
+
+  .quote-text #text {
+    font-size: 17px;
+  }
+
+  .quote-author #author {
+    font-size: 14px;
+  }
+
+  .buttons-container button {
+    padding: 8px 10px;
+    font-size: 9px;
+  }
+}

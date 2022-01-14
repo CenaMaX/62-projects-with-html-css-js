@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Credit Card Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="./public/images/img.jpg" alt="Payment Image" />
+      </div>
+      <div class="right">
+        <div class="content">
+          <h2>Payment details</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" name="name" />
+            <label for="card-number">Card-Number</label>
+            <input
+              name="card-number"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              autocomplete="cc-number"
+              maxlength="19"
+              placeholder="xxxx xxxx xxxx xxxx"
+            />
+            <label for="ex-date">Expiration Date</label>
+            <input type="month" name="ex-date" />
+            <label for="cvv">CVV</label>
+            <input type="password" name="cvv" maxlength="3" />
+            <button class="submit" type="submit">Buy Now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

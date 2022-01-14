@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(90, 37, 160);
+}
+
+.btn {
+  position: relative;
+  background: #000;
+  width: 13rem;
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn::after {
+  position: absolute;
+  content: '';
+  top: calc(-1 * 5px);
+  left: calc(-1 * 5px);
+  z-index: -1;
+  width: calc(100% + 5px * 2);
+  height: calc(100% + 5px * 2);
+  border-radius: calc(2 * 5px);
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+}
+
+.btn:hover::after {
+  animation: moveGradientColors 3s alternate infinite;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+@keyframes moveGradientColors {
+  50% {
+    background-position: 100% 50%;
+  }
+}

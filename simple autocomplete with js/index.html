@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>Simple AutoComplete</title>
+  </head>
+  <body>
+    <label for="search" class="search-lbl">
+      AutoComplete Search
+      <input
+        type="text"
+        name="search"
+        class="search-inpt"
+        id="search-inpt"
+        spellcheck="false"
+        autocomplete="off"
+        placeholder="Search...."
+      />
+    </label>
+    <ul class="filter-list"></ul>
+    <!-----------Script------------->
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>
