@@ -1,5 +1,5 @@
 
-# 62 Projects with html, css, js for beginners
+# 62 Projects with html, css, js 
 
 
 ## Run Locally
